@@ -1,0 +1,406 @@
+Detailed Security Analysis Report
+===============================
+
+
+Node: Switch 1
+Risk Score: 80.0/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 3
+  field_connections: 0
+  min_path_to_plc: 2
+  min_path_to_hmi: 1
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 7.42
+
+Node: DMZ Internal Firewall
+Risk Score: 9.5/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 3
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 1.00
+
+Node: SCADA Server
+Risk Score: 9.5/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 3
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 1.00
+
+Node: EWS
+Risk Score: 9.5/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 3
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 1.00
+
+Node: HMI 1
+Risk Score: 100.0/100
+Security Metrics:
+  plc_connections: 3
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 0
+  is_control_system: 0
+  is_hmi: 1
+  is_field_device: 0
+Exposure Score: 11.50
+
+Node: HMI 2
+Risk Score: 45.4/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 0
+  is_control_system: 0
+  is_hmi: 1
+  is_field_device: 0
+Exposure Score: 5.50
+
+Node: HMI 3
+Risk Score: 47.3/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 3
+  min_path_to_hmi: 0
+  is_control_system: 0
+  is_hmi: 1
+  is_field_device: 0
+Exposure Score: 2.00
+
+Node: PLC 1
+Risk Score: 34.1/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 1
+  field_connections: 0
+  min_path_to_plc: 0
+  min_path_to_hmi: 1
+  is_control_system: 1
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 4.75
+
+Node: I/O 1
+Risk Score: 28.6/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 2
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 6.50
+
+Node: Sensor 1
+Risk Score: 4.7/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 2
+  min_path_to_hmi: 3
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 1.04
+
+Node: Actuator 1
+Risk Score: 4.7/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 2
+  min_path_to_hmi: 3
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 1.04
+
+Node: PLC 2
+Risk Score: 38.4/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 1
+  field_connections: 0
+  min_path_to_plc: 0
+  min_path_to_hmi: 1
+  is_control_system: 1
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 4.75
+
+Node: segment coupler
+Risk Score: 5.2/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 4.50
+
+Node: PA Signal Line
+Risk Score: 40.6/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 3
+  min_path_to_plc: 2
+  min_path_to_hmi: 3
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 4.04
+
+Node: Device 1
+Risk Score: 17.0/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 3
+  min_path_to_hmi: 4
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 0.80
+
+Node: Device 2
+Risk Score: 17.0/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 3
+  min_path_to_hmi: 4
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 0.80
+
+Node: Device 3
+Risk Score: 17.0/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 3
+  min_path_to_hmi: 4
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 0.80
+
+Node: PLC 3
+Risk Score: 45.8/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 1
+  field_connections: 2
+  min_path_to_plc: 0
+  min_path_to_hmi: 1
+  is_control_system: 1
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 6.75
+
+Node: Device 4
+Risk Score: 16.4/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 1
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 5.50
+
+Node: Device 5
+Risk Score: 19.5/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 2
+  min_path_to_plc: 2
+  min_path_to_hmi: 3
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 3.04
+
+Node: Device 6
+Risk Score: 19.5/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 2
+  min_path_to_plc: 2
+  min_path_to_hmi: 3
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 3.04
+
+Node: Device 7
+Risk Score: 16.4/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 1
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 5.50
+
+Node: PLC 4
+Risk Score: 76.9/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 1
+  field_connections: 4
+  min_path_to_plc: 0
+  min_path_to_hmi: 1
+  is_control_system: 1
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 8.75
+
+Node: Device 8
+Risk Score: -0.0/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 4.50
+
+Node: Device 9
+Risk Score: -0.0/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 4.50
+
+Node: Device 10
+Risk Score: -0.0/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 4.50
+
+Node: Device 11
+Risk Score: -0.0/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 1
+Exposure Score: 4.50
+
+Node: Firewall 2
+Risk Score: 16.2/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 1
+  field_connections: 0
+  min_path_to_plc: 2
+  min_path_to_hmi: 1
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 3.42
+
+Node: Switch 2
+Risk Score: 1.5/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 2
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 4.50
+
+Node: PLC 5
+Risk Score: 60.5/100
+Security Metrics:
+  plc_connections: 0
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 0
+  min_path_to_hmi: 3
+  is_control_system: 1
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 2.38
+
+Node: Crown Jewel
+Risk Score: 27.7/100
+Security Metrics:
+  plc_connections: 1
+  hmi_connections: 0
+  field_connections: 0
+  min_path_to_plc: 1
+  min_path_to_hmi: 4
+  is_control_system: 0
+  is_hmi: 0
+  is_field_device: 0
+Exposure Score: 4.30

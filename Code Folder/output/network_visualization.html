@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "#000000"}, "id": 2, "label": "Switch 1", "shape": "dot", "size": 150, "title": "Node: Switch 1\nCriticality Score: 5\nDegree: 6\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 1, "label": "DMZ Internal Firewall", "shape": "dot", "size": 25, "title": "Node: DMZ Internal Firewall\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 3, "label": "SCADA Server", "shape": "dot", "size": 25, "title": "Node: SCADA Server\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 4, "label": "EWS", "shape": "dot", "size": 25, "title": "Node: EWS\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 5, "label": "HMI 1", "shape": "dot", "size": 100, "title": "Node: HMI 1\nCriticality Score: 3\nDegree: 4\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 6, "label": "HMI 2", "shape": "dot", "size": 50, "title": "Node: HMI 2\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 7, "label": "HMI 3", "shape": "dot", "size": 50, "title": "Node: HMI 3\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 8, "label": "PLC 1", "shape": "dot", "size": 50, "title": "Node: PLC 1\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 9, "label": "I/O 1", "shape": "dot", "size": 75, "title": "Node: I/O 1\nCriticality Score: 2\nDegree: 3\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 10, "label": "Sensor 1", "shape": "dot", "size": 25, "title": "Node: Sensor 1\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 11, "label": "Actuator 1", "shape": "dot", "size": 25, "title": "Node: Actuator 1\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 12, "label": "PLC 2", "shape": "dot", "size": 50, "title": "Node: PLC 2\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 13, "label": "segment coupler", "shape": "dot", "size": 50, "title": "Node: segment coupler\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 14, "label": "PA Signal Line", "shape": "dot", "size": 100, "title": "Node: PA Signal Line\nCriticality Score: 3\nDegree: 4\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 15, "label": "Device 1", "shape": "dot", "size": 25, "title": "Node: Device 1\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 16, "label": "Device 2", "shape": "dot", "size": 25, "title": "Node: Device 2\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 17, "label": "Device 3", "shape": "dot", "size": 25, "title": "Node: Device 3\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "red", "font": {"color": "#000000"}, "id": 18, "label": "PLC 3", "shape": "dot", "size": 50, "title": "Node: PLC 3\nCriticality Score: 1\nDegree: 3\nPart of Cycle: Yes"}, {"color": "red", "font": {"color": "#000000"}, "id": 19, "label": "Device 4", "shape": "dot", "size": 25, "title": "Node: Device 4\nCriticality Score: 0\nDegree: 2\nPart of Cycle: Yes"}, {"color": "red", "font": {"color": "#000000"}, "id": 20, "label": "Device 5", "shape": "dot", "size": 25, "title": "Node: Device 5\nCriticality Score: 0\nDegree: 2\nPart of Cycle: Yes"}, {"color": "red", "font": {"color": "#000000"}, "id": 21, "label": "Device 6", "shape": "dot", "size": 25, "title": "Node: Device 6\nCriticality Score: 0\nDegree: 2\nPart of Cycle: Yes"}, {"color": "red", "font": {"color": "#000000"}, "id": 22, "label": "Device 7", "shape": "dot", "size": 25, "title": "Node: Device 7\nCriticality Score: 0\nDegree: 2\nPart of Cycle: Yes"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 23, "label": "PLC 4", "shape": "dot", "size": 125, "title": "Node: PLC 4\nCriticality Score: 4\nDegree: 5\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 24, "label": "Device 8", "shape": "dot", "size": 25, "title": "Node: Device 8\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 25, "label": "Device 9", "shape": "dot", "size": 25, "title": "Node: Device 9\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 26, "label": "Device 10", "shape": "dot", "size": 25, "title": "Node: Device 10\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 27, "label": "Device 11", "shape": "dot", "size": 25, "title": "Node: Device 11\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 28, "label": "Firewall 2", "shape": "dot", "size": 50, "title": "Node: Firewall 2\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 29, "label": "Switch 2", "shape": "dot", "size": 50, "title": "Node: Switch 2\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 30, "label": "PLC 5", "shape": "dot", "size": 50, "title": "Node: PLC 5\nCriticality Score: 1\nDegree: 2\nPart of Cycle: No"}, {"color": "#97c2fc", "font": {"color": "#000000"}, "id": 31, "label": "Crown Jewel", "shape": "dot", "size": 25, "title": "Node: Crown Jewel\nCriticality Score: 0\nDegree: 1\nPart of Cycle: No"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": 2, "to": 1}, {"color": "gray", "from": 2, "to": 3}, {"color": "gray", "from": 2, "to": 4}, {"color": "gray", "from": 2, "to": 5}, {"color": "gray", "from": 2, "to": 6}, {"color": "gray", "from": 2, "to": 7}, {"color": "gray", "from": 5, "to": 8}, {"color": "gray", "from": 5, "to": 12}, {"color": "gray", "from": 5, "to": 18}, {"color": "gray", "from": 6, "to": 23}, {"color": "gray", "from": 7, "to": 28}, {"color": "gray", "from": 8, "to": 9}, {"color": "gray", "from": 9, "to": 10}, {"color": "gray", "from": 9, "to": 11}, {"color": "gray", "from": 12, "to": 13}, {"color": "gray", "from": 13, "to": 14}, {"color": "gray", "from": 14, "to": 15}, {"color": "gray", "from": 14, "to": 16}, {"color": "gray", "from": 14, "to": 17}, {"color": "red", "from": 18, "to": 19}, {"color": "red", "from": 18, "to": 22}, {"color": "red", "from": 19, "to": 20}, {"color": "red", "from": 20, "to": 21}, {"color": "red", "from": 21, "to": 22}, {"color": "gray", "from": 23, "to": 24}, {"color": "gray", "from": 23, "to": 25}, {"color": "gray", "from": 23, "to": 26}, {"color": "gray", "from": 23, "to": 27}, {"color": "gray", "from": 28, "to": 29}, {"color": "gray", "from": 29, "to": 30}, {"color": "gray", "from": 30, "to": 31}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"forceAtlas2Based": {"gravitationalConstant": -50, "centralGravity": 0.01, "springLength": 100, "springConstant": 0.08}, "solver": "forceAtlas2Based", "stabilization": {"iterations": 150}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

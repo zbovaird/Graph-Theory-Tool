@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg contentScriptType="text/ecmascript" width="3332.0"
+<svg contentScriptType="text/ecmascript" width="3480.7231"
      xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
      contentStyleType="text/css"
-     viewBox="-2809.000000 -1070.000000 3332.000000 1568.000000" height="1568.0"
-     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-     version="1.1">
+     viewBox="-2870.645752 -1073.456665 3480.723145 1575.081055"
+     height="1575.081" preserveAspectRatio="xMidYMid meet"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
     <g id="edges">
-        <path stroke-linecap="round" fill="none" class="id_1 id_2"
-              d="M -114.623810,-1051.766846 A 175.575148,175.575148 0,0 1,-105.602180,-857.621399"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_2 id_3"
-              d="M -102.918556,-855.102966 A 519.754567,519.754567 0,0 1,504.671234,-854.006897"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_2 id_4"
-              d="M -119.106400,-843.357910 A 434.147372,434.147372 0,0 1,-623.926880,-847.764038"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_2 id_5"
-              d="M -118.393677,-842.476501 A 1476.306704,1476.306704 0,0 1,-1865.744263,-673.234497"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_2 id_6"
-              d="M -104.751030,-841.376953 A 297.079405,297.079405 0,0 1,-88.894829,-501.450989"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_2 id_7"
-              d="M -101.040840,-850.235107 A 585.840278,585.840278 0,0 1,491.367828,-502.538971"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_5 id_8"
-              d="M -1881.143799,-671.112305 A 618.402889,618.402889 0,0 1,-2595.135498,-539.686096"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_8 id_9"
-              d="M -2600.162598,-534.884827 A 204.283159,204.283159 0,0 1,-2648.219482,-311.136658"
-              stroke="#000000" stroke-width="2.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_9 id_10"
-              d="M -2655.746338,-294.393280 A 201.435107,201.435107 0,0 1,-2789.109619,-112.644516"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_9 id_11"
-              d="M -2646.046631,-301.446198 A 199.204157,199.204157 0,0 1,-2510.647949,-124.572731"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_5 id_12"
-              d="M -1870.098755,-669.333130 A 210.437080,210.437080 0,0 1,-1913.745728,-437.156189"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_12 id_13"
-              d="M -1914.909058,-422.265961 A 189.828471,189.828471 0,0 1,-1908.045776,-210.893707"
-              stroke="#000000" stroke-width="2.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_13 id_14"
-              d="M -1906.825928,-195.167068 A 220.502311,220.502311 0,0 1,-1877.416260,51.420109"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_14 id_15"
-              d="M -1881.657715,70.169426 A 272.569671,272.569671 0,0 1,-2048.883301,332.225464"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_14 id_16"
-              d="M -1876.282837,68.225807 A 356.376049,356.376049 0,0 1,-1873.268188,479.699249"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_14 id_17"
-              d="M -1872.625977,62.974739 A 288.545673,288.545673 0,0 1,-1669.751831,323.310333"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_5 id_18"
-              d="M -1864.772949,-681.435913 A 595.875475,595.875475 0,0 1,-1202.931030,-456.720520"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_18 id_19"
-              d="M -1198.916382,-438.660370 A 227.720786,227.720786 0,0 1,-1381.921753,-258.214386"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_19 id_20"
-              d="M -1384.362671,-249.966888 A 247.519165,247.519165 0,0 1,-1324.403442,24.340357"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_20 id_21"
-              d="M -1319.640991,28.643761 A 331.046155,331.046155 0,0 1,-941.266052,73.934502"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_21 id_22"
-              d="M -934.148865,70.735123 A 285.532775,285.532775 0,0 1,-748.665771,-197.879211"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
-        <path stroke-linecap="round" fill="none" class="id_22 id_18"
-              d="M -749.146301,-199.854218 A 433.731621,433.731621 0,0 1,-1192.922729,-439.483063"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -120.302284,-1049.668579 L -111.450760,-859.183960"
+              class="id_1 id_2" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -100.986595,-849.176697 L 502.717926,-848.087646"
+              class="id_2 id_3" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -120.986198,-849.282043 L -621.943970,-853.654419"
+              class="id_2 id_4" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -120.940002,-848.230713 L -1864.349609,-679.370422"
+              class="id_2 id_5" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -110.520630,-839.205627 L -94.841499,-503.075806"
+              class="id_2 id_6" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -102.362282,-844.132996 L 486.684479,-498.410034"
+              class="id_2 id_7" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1884.137695,-676.596069 L -2594.290527,-545.876465"
+              class="id_5 id_8" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="2.0"
+              d="M -2606.225098,-534.289124 L -2653.502930,-314.169281"
+              class="id_8 id_9" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -2661.518799,-296.329895 L -2792.688721,-117.569908"
+              class="id_9 id_10" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -2649.524170,-296.451752 L -2516.376953,-122.519333"
+              class="id_9 id_11" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1876.150513,-668.578552 L -1919.110352,-440.056976"
+              class="id_5 id_12" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="2.0"
+              d="M -1920.633301,-420.234406 L -1913.889893,-212.549667"
+              class="id_12 id_13" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1912.380981,-192.625305 L -1883.413452,50.256134"
+              class="id_13 id_14" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1887.608521,68.615631 L -2052.799316,327.483002"
+              class="id_14 id_15" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1882.155884,70.185493 L -1879.169189,477.825836"
+              class="id_14 id_16" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1876.082397,68.073540 L -1675.540527,325.416138"
+              class="id_14 id_17" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1864.833862,-675.191345 L -1206.684814,-451.729736"
+              class="id_5 id_18" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1204.336426,-441.493622 L -1384.678345,-263.673767"
+              class="id_18 id_19" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1389.663696,-246.883347 L -1330.507446,23.749786"
+              class="id_19 id_20" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1318.442993,34.707619 L -943.861450,79.544281"
+              class="id_20 id_21" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -928.250183,72.503975 L -744.921936,-192.989731"
+              class="id_21 id_22" stroke-opacity="1.0" stroke="#000000"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -748.038940,-205.969864 L -1188.416504,-443.763367"
+              class="id_22 id_18" stroke-opacity="1.0" stroke="#000000"/>
     </g>
     <g id="nodes">
         <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-110.98658"
@@ -142,5 +142,117 @@
         <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-739.2398"
                 class="id_22" cy="-201.21854" stroke="#000000"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="24" x="-110.98658" y="-844.7514" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_2">
+            2 - Switch 1
+        </text>
+        <text font-size="24" x="-120.766464" y="-1055.275" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_1">
+            1 - DMZ Internal Firewall
+        </text>
+        <text font-size="24" x="512.7179" y="-843.62427" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_3">
+            3 - SCADA Server
+        </text>
+        <text font-size="24" x="-631.9436" y="-849.29834" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_4">
+            4 - EWS
+        </text>
+        <text font-size="24" x="-1874.303" y="-674.01965" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_5">
+            5 - HMI 1
+        </text>
+        <text font-size="24" x="-94.37555" y="-488.69995" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_6">
+            6 - HMI 2
+        </text>
+        <text font-size="24" x="495.30878" y="-488.9596" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_7">
+            7 - HMI 3
+        </text>
+        <text font-size="24" x="-2604.1252" y="-539.6228" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_8">
+            8 - PLC 1
+        </text>
+        <text font-size="24" x="-2655.6028" y="-299.94693" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_9">
+            9 - I/O 1
+        </text>
+        <text font-size="24" x="-2798.6047" y="-105.06421" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_10">
+            10 - Sensor 1
+        </text>
+        <text font-size="24" x="-2510.2983" y="-110.19603" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_11">
+            11 - Actuator 1
+        </text>
+        <text font-size="24" x="-1920.9579" y="-425.78577" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_12">
+            12 - PLC 2
+        </text>
+        <text font-size="24" x="-1913.5653" y="-196.97876" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_13">
+            13 - segment coupler
+        </text>
+        <text font-size="24" x="-1882.2291" y="65.81857" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_14">
+            14 - PA Signal Line
+        </text>
+        <text font-size="24" x="-2058.1787" y="340.2996" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_15">
+            15 - Device 1
+        </text>
+        <text font-size="24" x="-1879.096" y="492.21228" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_16">
+            16 - Device 2
+        </text>
+        <text font-size="24" x="-1669.3938" y="337.6926" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_17">
+            17 - Device 3
+        </text>
+        <text font-size="24" x="-1197.2157" y="-444.0694" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_18">
+            18 - PLC 3
+        </text>
+        <text font-size="24" x="-1391.7991" y="-252.26596" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_19">
+            19 - Device 4
+        </text>
+        <text font-size="24" x="-1328.3721" y="37.90584" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_20">
+            20 - Device 5
+        </text>
+        <text font-size="24" x="-933.9323" y="85.1195" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_21">
+            21 - Device 6
+        </text>
+        <text font-size="24" x="-739.2398" y="-196.83572" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_22">
+            22 - Device 7
+        </text>
     </g>
 </svg>

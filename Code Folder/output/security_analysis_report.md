@@ -7,111 +7,64 @@ CRITICAL FINDINGS:
 • 8 critical network bottlenecks that could impact operations
 • 28 potentially exposed critical assets
 
-## Priority Actions
-
-### HMI 1 (Risk Score: 100.0)
-RISK FACTORS:
-• Direct connections to 3 PLCs and 0 HMIs
-• 0 field device connections
-• Exposure score: 11.50
-
-RECOMMENDED ACTIONS:
-• Implement network segmentation to isolate this node
-• Review and restrict access permissions
-• Monitor traffic patterns for anomalies
-
-### Switch 1 (Risk Score: 92.6)
-RISK FACTORS:
-• Direct connections to 0 PLCs and 3 HMIs
-• 0 field device connections
-• Exposure score: 7.42
-
-RECOMMENDED ACTIONS:
-• Implement network segmentation to isolate this node
-• Review and restrict access permissions
-• Monitor traffic patterns for anomalies
-
-### PLC 4 (Risk Score: 77.2)
-RISK FACTORS:
-• Direct connections to 0 PLCs and 1 HMIs
-• 4 field device connections
-• Exposure score: 8.75
-
-RECOMMENDED ACTIONS:
-• Implement network segmentation to isolate this node
-• Review and restrict access permissions
-• Monitor traffic patterns for anomalies
-
 ## Network Vulnerability Assessment
 
-### Critical Access Points
-Crown Jewel:
-• Network Impact Score: 0.507
-• Traffic Concentration: 0.192
-• Connected Components: 1
-• Recommended: Monitor
-Device 2:
-• Network Impact Score: 0.435
-• Traffic Concentration: 0.168
-• Connected Components: 1
-• Recommended: Monitor
-Device 3:
-• Network Impact Score: 0.435
-• Traffic Concentration: 0.165
-• Connected Components: 1
-• Recommended: Monitor
-Device 1:
-• Network Impact Score: 0.435
-• Traffic Concentration: 0.162
-• Connected Components: 1
-• Recommended: Monitor
-Device 8:
-• Network Impact Score: 0.390
-• Traffic Concentration: 0.157
-• Connected Components: 1
-• Recommended: Monitor
+### High-Risk Nodes
+```
+Node         | Risk Score | PLC Conn | HMI Conn | Field Conn | Exposure
+-------------|------------|----------|----------|------------|----------
+HMI 1        |   100.0    |    3     |    0     |     0      |  11.50  
+Switch 1     |    92.6    |    0     |    3     |     0      |   7.42  
+PLC 4        |    77.2    |    0     |    1     |     4      |   8.75  
+```
+
+## Network Bottleneck Analysis
+
+Critical traffic concentration points ranked by impact:
+
+```
+Node         | Impact Score | Traffic Load | Components | Risk Level
+-------------|-------------|--------------|------------|------------
+Crown Jewel  |    0.507    |    0.191    |     1      | MODERATE  
+Device 2     |    0.435    |    0.167    |     1      | MODERATE  
+Device 3     |    0.435    |    0.163    |     1      | MODERATE  
+Device 1     |    0.435    |    0.169    |     1      | MODERATE  
+Device 8     |    0.390    |    0.161    |     1      | MODERATE  
+```
 
 ## Security Zone Analysis
 
-### Zone Segmentation Issues
-Control Zone:
-• Found 4 potential isolation violations
-• Recommended: Review access controls between zones
-Operations Zone:
-• Found 4 potential isolation violations
-• Recommended: Review access controls between zones
-Field Zone:
-• Found 5 potential isolation violations
-• Recommended: Review access controls between zones
+Zone isolation status:
+
+```
+Zone         | Violations | Risk Level | Recommended Action
+-------------|------------|------------|-------------------
+Control      |     4      | HIGH       | IMMEDIATE REVIEW
+Operations   |     4      | HIGH       | IMMEDIATE REVIEW
+Field        |     5      | HIGH       | IMMEDIATE REVIEW
+```
 
 ## Attack Path Analysis
 
-### Critical Asset Exposure
-Crown Jewel:
-• 2 potential attack paths identified
-• Shortest path length: 2
-• Mitigation: Implement additional network segmentation
-SCADA Server:
-• 6 potential attack paths identified
-• Shortest path length: 2
-• Mitigation: Implement additional network segmentation
-HMI 1:
-• 13 potential attack paths identified
-• Shortest path length: 2
-• Mitigation: Implement additional network segmentation
-HMI 2:
-• 11 potential attack paths identified
-• Shortest path length: 2
-• Mitigation: Implement additional network segmentation
-HMI 3:
-• 8 potential attack paths identified
-• Shortest path length: 2
-• Mitigation: Implement additional network segmentation
+Critical asset exposure analysis:
+
+```
+Asset        | Attack Paths | Min Path Length | Risk Level
+-------------|-------------|-----------------|------------
+Crown Jewel  |      2       |        2        | MODERATE  
+SCADA Server |      6       |        2        | HIGH      
+HMI 1        |      13      |        2        | HIGH      
+HMI 2        |      11      |        2        | HIGH      
+HMI 3        |      8       |        2        | HIGH      
+```
 
 ## Appendix: Technical Details
 
-### Network Statistics
-• Total Nodes: 31
-• Network Diameter: 10
-• Average Path Length: 4.67
-• Graph Density: 0.067
+```
+Metric               | Value
+--------------------|-------
+Total Nodes         | 31
+Network Diameter    | 10
+Average Path Length | 4.67
+Graph Density      | 0.067
+```

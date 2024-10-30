@@ -1,0 +1,133 @@
+Network Security Analysis Report
+============================
+
+Attack Surface Analysis:
+----------------------
+
+Entry point: DMZ Internal Firewall
+  To SCADA Server: 2 hops
+  To HMI 1: 2 hops
+  To HMI 2: 2 hops
+  To HMI 3: 2 hops
+  To Crown Jewel: 6 hops
+
+Entry point: SCADA Server
+  To SCADA Server: 0 hops
+  To HMI 1: 2 hops
+  To HMI 2: 2 hops
+  To HMI 3: 2 hops
+  To Crown Jewel: 6 hops
+
+Entry point: EWS
+  To SCADA Server: 2 hops
+  To HMI 1: 2 hops
+  To HMI 2: 2 hops
+  To HMI 3: 2 hops
+  To Crown Jewel: 6 hops
+
+Entry point: Sensor 1
+  To SCADA Server: 5 hops
+  To HMI 1: 3 hops
+  To HMI 2: 5 hops
+  To HMI 3: 5 hops
+  To Crown Jewel: 9 hops
+
+Entry point: Actuator 1
+  To SCADA Server: 5 hops
+  To HMI 1: 3 hops
+  To HMI 2: 5 hops
+  To HMI 3: 5 hops
+  To Crown Jewel: 9 hops
+
+Entry point: Device 1
+  To SCADA Server: 6 hops
+  To HMI 1: 4 hops
+  To HMI 2: 6 hops
+  To HMI 3: 6 hops
+  To Crown Jewel: 10 hops
+
+Entry point: Device 2
+  To SCADA Server: 6 hops
+  To HMI 1: 4 hops
+  To HMI 2: 6 hops
+  To HMI 3: 6 hops
+  To Crown Jewel: 10 hops
+
+Entry point: Device 3
+  To SCADA Server: 6 hops
+  To HMI 1: 4 hops
+  To HMI 2: 6 hops
+  To HMI 3: 6 hops
+  To Crown Jewel: 10 hops
+
+Entry point: Device 8
+  To SCADA Server: 4 hops
+  To HMI 1: 4 hops
+  To HMI 2: 2 hops
+  To HMI 3: 4 hops
+  To Crown Jewel: 8 hops
+
+Entry point: Device 9
+  To SCADA Server: 4 hops
+  To HMI 1: 4 hops
+  To HMI 2: 2 hops
+  To HMI 3: 4 hops
+  To Crown Jewel: 8 hops
+
+Entry point: Device 10
+  To SCADA Server: 4 hops
+  To HMI 1: 4 hops
+  To HMI 2: 2 hops
+  To HMI 3: 4 hops
+  To Crown Jewel: 8 hops
+
+Entry point: Device 11
+  To SCADA Server: 4 hops
+  To HMI 1: 4 hops
+  To HMI 2: 2 hops
+  To HMI 3: 4 hops
+  To Crown Jewel: 8 hops
+
+Entry point: Crown Jewel
+  To SCADA Server: 6 hops
+  To HMI 1: 6 hops
+  To HMI 2: 6 hops
+  To HMI 3: 4 hops
+  To Crown Jewel: 0 hops
+
+Network Resilience:
+-----------------
+Base network connectivity: 1
+
+Removing Switch 1 & PLC 4:
+  Results in 10 components
+  Largest component: 16 nodes
+  Isolated nodes: 15
+
+Removing Switch 1 & HMI 1:
+  Results in 8 components
+  Largest component: 6 nodes
+  Isolated nodes: 25
+
+Removing PLC 4 & HMI 1:
+  Results in 8 components
+  Largest component: 10 nodes
+  Isolated nodes: 21
+
+Security Anomalies:
+-----------------
+
+Node: Switch 1
+  Risk Score: -0.723
+  Critical Paths: 5
+  Clustering: 0.000
+
+Node: HMI 1
+  Risk Score: -0.682
+  Critical Paths: 3
+  Clustering: 0.000
+
+Node: Crown Jewel
+  Risk Score: -0.653
+  Critical Paths: 1
+  Clustering: 0.000

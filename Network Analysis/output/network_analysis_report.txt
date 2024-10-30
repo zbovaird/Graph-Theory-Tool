@@ -1,0 +1,43 @@
+Network Analysis Report
+=====================
+
+Network Structure:
+- Nodes: 31
+- Edges: 31
+- Network diameter: 10
+- Density: 0.067
+
+Cycle Analysis:
+- One cycle found with 5 nodes:
+- Cycle path: Device 4 -> Device 5 -> Device 6 -> Device 7 -> PLC 3
+
+Critical Nodes:
+- Switch 1:
+  * Splits network into 6 components
+  * Degree: 6
+- PLC 4:
+  * Splits network into 5 components
+  * Degree: 5
+- HMI 1:
+  * Splits network into 4 components
+  * Degree: 4
+- PA Signal Line:
+  * Splits network into 4 components
+  * Degree: 4
+- I/O 1:
+  * Splits network into 3 components
+  * Degree: 3
+
+Anomalous Nodes:
+- Switch 1:
+  * Anomaly score: -0.725
+  * Degree centrality: 0.200
+  * Betweenness centrality: 0.667
+- HMI 1:
+  * Anomaly score: -0.694
+  * Degree centrality: 0.133
+  * Betweenness centrality: 0.687
+- PLC 4:
+  * Anomaly score: -0.596
+  * Degree centrality: 0.167
+  * Betweenness centrality: 0.253

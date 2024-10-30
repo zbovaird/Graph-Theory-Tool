@@ -4,6 +4,10 @@
 
 ![Network Overview](network_overview.png)
 
+## Critical Infrastructure Analysis
+
+![Critical Infrastructure](critical_infrastructure.png)
+
 ## Spectral Metrics
 
 | Metric             |    Before |     After |    Change |
@@ -89,10 +93,18 @@ Before: 0.000000, After: 0.058602
 
 === Network Robustness ===
 Before Removal:
-  Largest_CC_After_Node_Removal: 6
-  Largest_CC_After_Edge_Removal: 10
+  Largest_Connected_Component_After_Node_Removal: 6
+  Connected_Component_Size_Change_After_Node_Removal: -25
+  Largest_Connected_Component_After_Edge_Removal: 10
+  Connected_Component_Size_Change_After_Edge_Removal: -21
+  Percentage_Of_Network_Intact_After_Node_Removal: 19.35483870967742
+  Percentage_Of_Network_Intact_After_Edge_Removal: 32.25806451612903
 After Removal:
-  Largest_CC_After_Node_Removal: 7
-  Largest_CC_After_Edge_Removal: 20
+  Largest_Connected_Component_After_Node_Removal: 7
+  Connected_Component_Size_Change_After_Node_Removal: -24
+  Largest_Connected_Component_After_Edge_Removal: 20
+  Connected_Component_Size_Change_After_Edge_Removal: -11
+  Percentage_Of_Network_Intact_After_Node_Removal: 22.58064516129032
+  Percentage_Of_Network_Intact_After_Edge_Removal: 64.51612903225806
 
 ```

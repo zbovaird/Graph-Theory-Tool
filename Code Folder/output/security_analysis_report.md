@@ -25,11 +25,11 @@ Critical traffic concentration points ranked by impact:
 ```
 Node         | Impact Score | Traffic Load | Components | Risk Level
 -------------|-------------|--------------|------------|------------
-Crown Jewel  |    0.507    |    0.191    |     1      | MODERATE  
+Crown Jewel  |    0.507    |    0.186    |     1      | MODERATE  
 Device 2     |    0.435    |    0.167    |     1      | MODERATE  
-Device 3     |    0.435    |    0.163    |     1      | MODERATE  
-Device 1     |    0.435    |    0.169    |     1      | MODERATE  
-Device 8     |    0.390    |    0.161    |     1      | MODERATE  
+Device 3     |    0.435    |    0.170    |     1      | MODERATE  
+Device 1     |    0.435    |    0.164    |     1      | MODERATE  
+Device 8     |    0.390    |    0.162    |     1      | MODERATE  
 ```
 
 ## Security Zone Analysis
@@ -67,4 +67,14 @@ Total Nodes         | 31
 Network Diameter    | 10
 Average Path Length | 4.67
 Graph Density      | 0.067
+Spectral Radius    | 7.272
+Fiedler Value      | 0.054
+```
+Top Fiedler Components:
+15           | 0.305
+16           | 0.305
+17           | 0.305
+14           | 0.288
+31           | -0.265
+
 ```

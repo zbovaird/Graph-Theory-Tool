@@ -15,7 +15,6 @@
 - Largest Component Size: 31
 
 ### Cycles
-- Number of Cycles: 1
 - Cycle 1: Device 4 -> Device 5 -> Device 6 -> Device 7 -> PLC 3 -> Device 4
 
 ## Critical Nodes Analysis
@@ -157,6 +156,7 @@ Security Metrics:
 - Minimum Path to HMI: 0
 - Exposure Score: 11.50
 
+
 #### Switch 1
 Risk Score: 92.6/100
 Security Metrics:
@@ -166,6 +166,7 @@ Security Metrics:
 - Minimum Path to PLC: 2
 - Minimum Path to HMI: 1
 - Exposure Score: 7.42
+
 
 #### PLC 4
 Risk Score: 77.2/100
@@ -177,6 +178,7 @@ Security Metrics:
 - Minimum Path to HMI: 1
 - Exposure Score: 8.75
 
+
 #### PLC 5
 Risk Score: 66.4/100
 Security Metrics:
@@ -186,6 +188,7 @@ Security Metrics:
 - Minimum Path to PLC: 0
 - Minimum Path to HMI: 3
 - Exposure Score: 2.38
+
 
 #### HMI 3
 Risk Score: 62.3/100
@@ -197,6 +200,7 @@ Security Metrics:
 - Minimum Path to HMI: 0
 - Exposure Score: 2.00
 
+
 #### PLC 3
 Risk Score: 58.6/100
 Security Metrics:
@@ -206,6 +210,7 @@ Security Metrics:
 - Minimum Path to PLC: 0
 - Minimum Path to HMI: 1
 - Exposure Score: 6.75
+
 
 #### HMI 2
 Risk Score: 53.6/100
@@ -227,9 +232,45 @@ Switch 1            0.200000                 0.666667                 0.344828  
 PLC 4               0.166667                 0.252874                 0.236220                 0.214164                 
 ```
 
+## Spectral Analysis
+### Network Spectral Properties
+- Spectral Radius: 7.272
+- Fiedler Value (Algebraic Connectivity): 0.054
+
+Fiedler vector interpretation:
+- The Fiedler value measures the network's connectivity robustness
+- Larger values indicate better connectivity and harder-to-disconnect networks
+- The Fiedler vector components can identify natural network partitions
+
+### Top 10 Nodes by Fiedler Vector Magnitude
+```
+Node Label          Fiedler Component   Interpretation
+----------------------------------------------------------------------
+Device 1            0.304603            Network splitter
+Device 2            0.304603            Network splitter
+Device 3            0.304603            Network splitter
+PA Signal Line      0.288084            Network splitter
+Crown Jewel         -0.264885           Network connector
+PLC 5               -0.250521           Network connector
+segment coupler     0.222908            Network splitter
+Switch 2            -0.222571           Network connector
+Device 8            -0.202675           Network connector
+Device 9            -0.202675           Network connector
+```
+
+### Spectral Analysis Insights
+- Network shows signs of weak connectivity and potential bottlenecks
+- System may be vulnerable to disconnection through targeted attacks
+
+- Spectral radius of 7.272 indicates high centralization with potential critical nodes
+
+### Network Bisection Analysis
+- Positive Fiedler component group: 16 nodes
+- Negative Fiedler component group: 15 nodes
+This natural bisection suggests a potential critical boundary in the network.
+
 ## Path Analysis
 ### Shortest Paths to Critical Assets
-
 From Switch 1:
 - To SCADA Server: Switch 1 -> SCADA Server (1 hops)
 - To HMI 1: Switch 1 -> HMI 1 (1 hops)
@@ -447,18 +488,15 @@ From Crown Jewel:
 - To HMI 3: Crown Jewel -> PLC 5 -> Switch 2 -> Firewall 2 -> HMI 3 (4 hops)
 - To Crown Jewel: Crown Jewel (0 hops)
 
-## Analysis Details
-- Analysis completed at: 2024-10-29 15:55:50
+## Analysis Details- Analysis completed at: 2024-10-30 10:19:07
 - Output directory: C:\Users\Service Casket\Desktop\Network Analysis Tool\output
 
-## Generated Files
-- risk_level_visualization.png
+## Generated Files- risk_level_visualization.png
 - network_analysis_report.txt
 - security_analysis_report.txt
 - comprehensive_analysis_report.md
 
-## Summary Statistics
-- Average node degree: 2.0
+## Summary Statistics- Average node degree: 2.0
 - Graph diameter: 10
 - Average shortest path length: 4.67
 - Graph density: 0.067
